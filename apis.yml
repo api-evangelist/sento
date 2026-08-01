@@ -1,7 +1,24 @@
 aid: sento
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sento.png
 name: sento
-description: sento is a company surfaced as a portfolio company of insight-partners and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: sento is a Munich-based B2B software company (sento GmbH) building a cloud-based
+  EDI (Electronic Data Interchange) platform that automates complex business-partner processes,
+  letting companies replace slow, manual partner-integration workflows with automated document
+  and data exchange. Founded by Nimar Blume and Felix Krauth and backed by Insight Partners,
+  sento raised a EUR 9 million seed round to expand its partner-onboarding and document-automation
+  product. As of this profile sento does not publish a public developer API, developer portal,
+  or API documentation - only its corporate marketing site and legal pages are publicly available.
 url: https://raw.githubusercontent.com/api-evangelist/sento/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- EDI
+- B2B
+- Automation
+- Integration
+- Data Exchange
+- Supply Chain
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sento-domain-security.yml
 - type: Website
   url: https://sento.io/
+- type: PrivacyPolicy
+  url: https://sento.io/datenschutz.html
+- type: Support
+  url: https://sento.io/kontakt.html
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
